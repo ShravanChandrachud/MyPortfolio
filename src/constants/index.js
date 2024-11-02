@@ -63,7 +63,7 @@ export const clientReviews = [
 
 export const myProjects = [
     {
-        title: 'Exepnse Tracker App',
+        title: 'Expense Tracker App',
         desc: 'This is basic expense tracker app made using basic CRUD features. The additional twist is that I have added filter options along with login and sign up method. This is a full stack project with frontend, backend and a database integrity in the project.',
         subdesc:
             'Made using React as a frontend js, node + express js as backend and MySQL to store record as the database.',

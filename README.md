@@ -1,8 +1,5 @@
-# React + Vite
+This is the codebase for my portfolio website.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I made this using ThreeJs, React, React Three/fiber, React Three/drei and many other tools as well. For example I used Ready Me Player to create an avatar and animated it using Mixamo.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Feel free to take a look at my code. Take inspirations or ideas from it or recommend me some ideas you might think of.

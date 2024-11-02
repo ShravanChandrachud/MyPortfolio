@@ -161,7 +161,7 @@ export const myProjects = [
         subdesc:
             'I built this with ThreeJS, React Three Fiber, React Three drei and ReactJs as the main libraries. I also used GSAP animations for many 3d components. I also used other tools such as Ready Me Player to make my avatar, Mixamo to rig the avatar and get some animations for the same.',
         // href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-        texture: '/textures/project/project4.mp4',
+        texture: '/textures/project/myportfolio.mp4',
         logo: '/portfolio.png',
         logoStyle: {
             backgroundColor: '#0E1F38',

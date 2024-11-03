@@ -17,7 +17,7 @@ const Navbar = () => {
             (<ul className='nav-ul'>
                 {navLinks.map(
                     ({ id, href, name }) => (
-                        <a key={id} href={href} className='nav-li_a'>
+                        <a key={id} href={href} className='nav-li_a' onClick={() => { setIsOpen(((prev) => !prev)) }}>
                             <li key={id} className='nav-li'>
                                 {name}
                             </li>

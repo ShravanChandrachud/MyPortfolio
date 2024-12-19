@@ -63,6 +63,40 @@ export const clientReviews = [
 
 export const myProjects = [
     {
+        title: 'Medical Record system using Blockchain',
+        desc: 'A data storage system which blockchain technology to store the records of patient. With the help of blockchain technology it ensures security and reliability of data records since they are immutable. Due to smart contracts it is easier to execute such systems while ensuring privacy and successful execution.',
+        subdesc:
+            'I made the smart contract in solidity language on RemixIDE. Connected it with my metamask account and deployed the smart contract.',
+        // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        texture: '/textures/project/remix_ide.mp4',
+        logo: '/assets/health-report.png',
+        logoStyle: {
+            backgroundColor: '#60f5a1',
+            background:
+                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+            border: '0.2px solid rgba(208, 213, 221, 1)',
+            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+        },
+        spotlight: '/assets/spotlight3.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Solidity',
+                path: '/assets/solidity.png',
+            },
+            {
+                id: 2,
+                name: 'Remix IDE',
+                path: 'assets/remix_ide.png',
+            },
+            {
+                id: 3,
+                name: 'MetaMask',
+                path: '/assets/MetaMask.svg',
+            },
+        ],
+    },
+    {
         title: 'Expense Tracker App',
         desc: 'This is basic expense tracker app made using basic CRUD features. The additional twist is that I have added filter options along with login and sign up method. This is a full stack project with frontend, backend and a database integrity in the project.',
         subdesc:
@@ -118,40 +152,6 @@ export const myProjects = [
                 id: 2,
                 name: 'Kaggle',
                 path: 'assets/kaggle.png',
-            },
-        ],
-    },
-    {
-        title: 'Medical Record system using Blockchain',
-        desc: 'A data storage system which blockchain technology to store the records of patient. With the help of blockchain technology it ensures security and reliability of data records since they are immutable. Due to smart contracts it is easier to execute such systems while ensuring privacy and successful execution.',
-        subdesc:
-            'I made the smart contract in solidity language on RemixIDE. Connected it with my metamask account and deployed the smart contract.',
-        // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-        texture: '/textures/project/remix_ide.mp4',
-        logo: '/assets/health-report.png',
-        logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-        },
-        spotlight: '/assets/spotlight3.png',
-        tags: [
-            {
-                id: 1,
-                name: 'Solidity',
-                path: '/assets/solidity.png',
-            },
-            {
-                id: 2,
-                name: 'Remix IDE',
-                path: 'assets/remix_ide.png',
-            },
-            {
-                id: 3,
-                name: 'MetaMask',
-                path: '/assets/MetaMask.svg',
             },
         ],
     },

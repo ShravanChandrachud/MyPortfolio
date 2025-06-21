@@ -26,42 +26,155 @@ export const navLinks = [
     },
 ];
 
-export const clientReviews = [
-    {
-        id: 1,
-        name: 'Emily Johnson',
-        position: 'Marketing Director at GreenLeaf',
-        img: 'assets/review1.png',
-        review:
-            'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-    },
-    {
-        id: 2,
-        name: 'Mark Rogers',
-        position: 'Founder of TechGear Shop',
-        img: 'assets/review2.png',
-        review:
-            'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-    },
-    {
-        id: 3,
-        name: 'John Dohsas',
-        position: 'Project Manager at UrbanTech ',
-        img: 'assets/review3.png',
-        review:
-            'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    },
-    {
-        id: 4,
-        name: 'Ether Smith',
-        position: 'CEO of BrightStar Enterprises',
-        img: 'assets/review4.png',
-        review:
-            'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-    },
-];
+// export const clientReviews = [
+//     {
+//         id: 1,
+//         name: 'Emily Johnson',
+//         position: 'Marketing Director at GreenLeaf',
+//         img: 'assets/review1.png',
+//         review:
+//             'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+//     },
+//     {
+//         id: 2,
+//         name: 'Mark Rogers',
+//         position: 'Founder of TechGear Shop',
+//         img: 'assets/review2.png',
+//         review:
+//             'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+//     },
+//     {
+//         id: 3,
+//         name: 'John Dohsas',
+//         position: 'Project Manager at UrbanTech ',
+//         img: 'assets/review3.png',
+//         review:
+//             'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+//     },
+//     {
+//         id: 4,
+//         name: 'Ether Smith',
+//         position: 'CEO of BrightStar Enterprises',
+//         img: 'assets/review4.png',
+//         review:
+//             'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+//     },
+// ];
 
 export const myProjects = [
+    {
+        title: 'ZenKraft',
+        desc: 'An AI-powered personalized yoga assistant designed to promote both physical and mental well-being.',
+        subdesc:
+            'Provides users with a personalized yoga course tailored to their fitness level, goals, and medical conditions. Utilizes real-time pose detection to offer instant feedback on posture, helping users improve their fitness effectively from the comfort of their home.',
+        // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        texture: '/textures/project/ZenKraft.mp4',
+        logo: '/assets/zenkraft_logo.png',
+        logoStyle: {
+            backgroundColor: '#c4c0c0',
+            border: '0.2px solid #36201D',
+            boxShadow: '0px 0px 60px 0px #AA3C304D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React.js',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'NodeJS',
+                path: '/assets/node_js.png',
+            },
+            {
+                id: 3,
+                name: 'MongoDB',
+                path: '/assets/mongodb-original.svg',
+            },
+            {
+                id: 4,
+                name: 'Flask',
+                path: '/assets/flask.svg',
+            },
+            {
+                id: 5,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 6,
+                name: 'OpenCV',
+                path: '/assets/opencv.svg',
+            },
+            {
+                id: 7,
+                name: 'MediaPipe',
+                path: '/assets/media-pipe.png',
+            },
+        ],
+    },
+    {
+        title: 'Agreement/Decision In Principle Automation system',
+        desc: 'Developed an AIP/DIP automation system during my internship at MortgageKart Ltd. The system automates form filling on lender (bank) intermediary portals and generates mortgage quotes, streamlining the process and enhancing efficiency for mortgage intermediaries.',
+        subdesc:
+            'Gained a strong understanding of the AIP/DIP process in the mortgage domain and analyzed various lender portals. Created intelligent field mappings by interpreting user input from the frontend, enabling automated and logically consistent responses aligned with lender-specific questionnaire formats.',
+        // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/dip.jpg',
+        logoStyle: {
+            backgroundColor: '#382f2f',
+            background:
+                'linear-gradient(0deg,rgba(35, 34, 34, 0.31),rgba(24, 21, 21, 0.31)), linear-gradient(180deg, rgb(26, 25, 25) 0%, rgba(33, 16, 16, 0.8) 100%)',
+            border: '0.2px solid rgba(33, 16, 16, 0.8)',
+            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+        },
+        spotlight: '/assets/spotlight3.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 2,
+                name: 'RobotFramework',
+                path: 'assets/robotframework.svg',
+            },
+            {
+                id: 3,
+                name: 'Javascript',
+                path: '/assets/javascript-js.svg',
+            },
+        ],
+    },
+    {
+        title: 'Keep Moving Forward - Game concept',
+        desc: 'Created during a game jam hosted by Code For a Cause under the theme "Keep Moving Forward", the game features a protagonist who continues to advance no matter the injuries sustained. He relentlessly battles waves of monsters, embodying the theme through his unwavering determination and survival-driven combat.',
+        subdesc:
+            'Developed a 2D side-scroller game in Unity where the main character battles relentless waves of monsters to rescue his kidnapped daughter from the Demon King. The character pushes forward despite injuries, and uniquely, can reattach severed monster limbs to replace his own lost ones, adding a dark and strategic twist to gameplay.',
+        // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/python.png',
+        logoStyle: {
+            backgroundColor: '#13202F',
+            border: '0.2px solid #17293E',
+            boxShadow: '0px 0px 60px 0px #2F6DB54D',
+        },
+        spotlight: '/assets/spotlight2.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Unity Engine',
+                path: '/assets/unity.svg',
+            },
+            {
+                id: 2,
+                name: 'C Sharp',
+                path: 'assets/c-sharp-c.svg',
+            },
+        ],
+    },
     {
         title: 'Medical Record system using Blockchain',
         desc: 'A data storage system which blockchain technology to store the records of patient. With the help of blockchain technology it ensures security and reliability of data records since they are immutable. Due to smart contracts it is easier to execute such systems while ensuring privacy and successful execution.',
@@ -93,38 +206,6 @@ export const myProjects = [
                 id: 3,
                 name: 'MetaMask',
                 path: '/assets/MetaMask.svg',
-            },
-        ],
-    },
-    {
-        title: 'Expense Tracker App',
-        desc: 'This is basic expense tracker app made using basic CRUD features. The additional twist is that I have added filter options along with login and sign up method. This is a full stack project with frontend, backend and a database integrity in the project.',
-        subdesc:
-            'Made using React as a frontend js, node + express js as backend and MySQL to store record as the database.',
-        // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-        texture: '/textures/project/expense.mp4',
-        logo: '/assets/budget.png',
-        logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
-            boxShadow: '0px 0px 60px 0px #AA3C304D',
-        },
-        spotlight: '/assets/spotlight1.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'NodeJS',
-                path: '/assets/node_js.png',
-            },
-            {
-                id: 3,
-                name: 'MySQL',
-                path: '/assets/mysql.png',
             },
         ],
     },
@@ -203,29 +284,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
+        name: 'MortgageKart Ltd',
+        pos: 'Software Developer Engineer Intern',
+        duration: '3rd April 2025 - Present',
+        title: "During my internship at MortgageKart Ltd., I designed and developed a complete AIP/DIP automation system for major UK lenders, including BM Solutions (Birmingham Midshires) and TMW (The Mortgage Works). I studied the end-to-end mortgage process, including its various types and internal workflows, and analyzed lender intermediary portals in detail. Based on this understanding, I created intelligent field mappings and logic to translate user inputs from the frontend into accurate, lender-specific responses. This enabled automated form filling and quote generation, streamlining the mortgage application process and significantly improving efficiency for intermediaries.",
+        icon: '/assets/mortgage-kart.png',
+        animation: 'victory',
+    },
+    {
+        id: 2,
         name: 'Stralto Global',
         pos: 'Full Stack Intern',
         duration: '3rd June 2024 - 12th July 2024',
         title: "During my time at Stralto Global, I developed and deployed a robust backend system, crafting APIs and databases from scratch to support their mobile app’s functionality. Additionally, I designed an intuitive Admin Panel to streamline app management for administrators. I was also responsible for unit testing to ensure code quality and reliability, implementing best practices for maintainable and scalable solutions.",
         icon: '/assets/stralto_global.jpg',
-        animation: 'victory',
+        animation: 'clapping',
     },
     {
-        id: 2,
+        id: 3,
         name: 'MeshBA Solutions LLP',
         pos: 'Database Management & Design Intern',
         duration: '28th February 2024 - 31st March 2024',
         title: "At MeshBA Solutions, I honed my skills in database management and design, focusing on building efficient data systems. As part of a self-driven project, I designed a comprehensive Movie Ticket Booking System, integrating core principles of data structuring, storage optimization, and retrieval efficiency to enhance user experience and system performance.",
         icon: '/assets/meshba.jpg',
-        animation: 'clapping',
+        animation: 'victory',
     },
-    // {
-    //     id: 3,
-    //     name: 'Notion',
-    //     pos: 'Junior Web Developer',
-    //     duration: '2019 - 2020',
-    //     title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    //     icon: '/assets/notion.svg',
-    //     animation: 'salute',
-    // },
 ];

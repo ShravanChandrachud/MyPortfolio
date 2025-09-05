@@ -12,7 +12,7 @@ const HackerRoom = (props) => {
     const { nodes, materials } = useGLTF('/models/hacker-room.glb');
 
     const monitortxt = useTexture('/textures/desk/monitor.png');
-    const screenTxt = useTexture('/textures/desk/screen.png');
+    const screenTxt = useTexture('/textures/desk/screen3.png');
 
     useEffect(() => {
         // Check if all assets are loaded

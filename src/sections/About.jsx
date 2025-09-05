@@ -11,7 +11,7 @@ const About = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            globeRef.current.pointOfView({ lat: 18.47961417830408, lng: 73.86247673863971, altitude: 1.5 }, 0);
+            globeRef.current.pointOfView({ lat: 42.33351257529759, lng: -71.10180955798526, altitude: 1.5 }, 0);
         }, 300);
     }, []);
 
@@ -25,8 +25,8 @@ const About = () => {
         }, 2000)
     }
 
-    const handleCopyPhone = () => {
-        navigator.clipboard.writeText('+918459984264');
+    const handleCopyPhone = (num) => {
+        navigator.clipboard.writeText(num);
 
         setHasCopied(true);
         toast.info("Phone number has been copied to your clipboard");
@@ -37,8 +37,8 @@ const About = () => {
 
 
     const myLoc = [{
-        lat: 18.47961417830408,
-        lng: 73.86247673863971,
+        lat: 42.33351257529759,
+        lng: -71.10180955798526,
         color: 'red',
         size: 20,
     }]
@@ -57,7 +57,7 @@ const About = () => {
                         <img src='/assets/grid1.png' alt='grid1' className='w-full sm:w-[276px] h-fit object-contain' />
                         <div>
                             <p className='grid-headtext'>Hi, I'm Shravan</p>
-                            <p className='grid-subtext'>I'm an aspiring computer science student with extensive experience in full-stack development. I'm passionate about AR/VR development and excited by its transformative potential in the future of technology.</p>
+                            <p className='grid-subtext'>I'm a Master's student in Computer Science at Northeastern University with hands-on experience in full-stack development. I am currently exploring the intersection of AI and VR, driven by a passion for building immersive, intelligent experiences that showcase the transformative potential of emerging technologies.</p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const About = () => {
                         <img src='/assets/grid2.png' alt='grid2' className='w-full sm:w-[276px] h-fit object-contain' />
                         <div>
                             <p className='grid-headtext'>Tech Stack</p>
-                            <p className='grid-subtext'>I specialize in ThreeJS, React, Node and SQL based web applications. I also have knowledge of python, c++, java, html, css and javascript. I am currently learning Unreal Engine and Unity for AR/VR Development</p>
+                            <p className='grid-subtext'>I specialize in React, Node.js, Express.js, Three.js, and SQL/NoSQL databases, with experience in Python, C++, C#, Java, JavaScript, Solidity, and web frameworks like Flask and Django. I am currently exploring AI-powered AR/VR development using Unity and Unreal Engine.</p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,6 @@ const About = () => {
                                 showGraticules={true}
                                 globeImageUrl='//unpkg.com/three-globe/example/img/earth-day.jpg'
                                 bumpImageUrl='//unpkg.com/three-globe/example/img/earth-topology.png'
-                                pointOfView={{ lat: 0, lng: 73.86247673863971, altitude: 2 }}
                                 htmlElementsData={myLoc}
                                 htmlElement={d => {
                                     const el = document.createElement('div');
@@ -92,7 +91,6 @@ const About = () => {
 
                                     el.style['pointer-events'] = 'auto';
                                     el.style.cursor = 'pointer';
-                                    el.onclick = () => console.info(d);
                                     return el;
                                 }}
                             />
@@ -100,7 +98,9 @@ const About = () => {
                         <div>
                             <p className='grid-headtext'>I live here</p>
                             <p className='grid-subtext'>I was born in Pune, Maharashtra, India</p>
-                            <Button name='Contact Me' isBeam containerClass='w-full mt-10' />
+                            <a href='#contact'>
+                                <Button name='Contact Me' isBeam containerClass='w-full mt-10' />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -108,8 +108,8 @@ const About = () => {
                     <div className='grid-container'>
                         <img src='/assets/grid3.png' alt='grid3' className='w-full sm:h-[276px] h-fit object-contain' />
                         <div>
-                            <p className='grid-headtext'>My Passion for Virtual Reality</p>
-                            <p className='grid-subtext'>I believe 3D technology will aid us widely in the future for in many cases like simulations and digital twinning and hence I have taken a step into learning and understanding 3D technology like Three Js</p>
+                            <p className='grid-headtext'>Merging AI with 3D Worlds</p>
+                            <p className='grid-subtext'>Exploring the intersection of AI and VR, I design intelligent 3D environments that merge realistic simulations with interactive feedback. Leveraging Three.js, Unity, and AI models, I aim to build applications that transform how users engage with virtual spaces and data-driven scenarios.</p>
                         </div>
                     </div>
                 </div>
@@ -144,9 +144,17 @@ const About = () => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <img src="/assets/phone.png" alt="phone icon" />
-                                <div className="copy-container" onClick={handleCopyPhone}>
+                                <div className="copy-container" onClick={() => handleCopyPhone('+918459984264')}>
                                     <p className="md:text-sm font-small text-gray_gradient text-white">
                                         +91 84599 84264
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <img src="/assets/phone.png" alt="phone icon" />
+                                <div className="copy-container" onClick={() => handleCopyPhone('+18573393097')}>
+                                    <p className="md:text-sm font-small text-gray_gradient text-white">
+                                        +1 857-339-30977
                                     </p>
                                 </div>
                             </div>

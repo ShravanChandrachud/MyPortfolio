@@ -55,8 +55,8 @@ const Contact = () => {
             <div className='relative min-h-screen flex items-center justify-center flex-col'>
                 <img src='/assets/terminal.png' alt='terminal background' className='absolute inset-0 min-h-screen' />
                 <div className='contact-container'>
-                    <h3 className='head-text'>Let's Talk</h3>
-                    <p className='text-lg text-white-600 mt-3'>Whether you're looking to create a new website, improve existing website or make a new project, I'm here to help</p>
+                    <h3 className='head-text'>Get in Touch</h3>
+                    <p className='text-lg text-white-600 mt-3'>Have a project in mind or an idea to explore? I'm here to help with web development, AI, VR, or full-stack solutions—let's make it happen together!</p>
                     <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col space-y-76'>
                         <label className='space-y-3'>
                             <span className='field-label'>Full Name</span>

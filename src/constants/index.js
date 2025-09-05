@@ -64,9 +64,9 @@ export const navLinks = [
 export const myProjects = [
     {
         title: 'ZenKraft',
-        desc: 'An AI-powered personalized yoga assistant designed to promote both physical and mental well-being.',
+        desc: 'An AI-powered personalized yoga assistant that blends wellness with technology to make fitness more accessible and effective.',
         subdesc:
-            'Provides users with a personalized yoga course tailored to their fitness level, goals, and medical conditions. Utilizes real-time pose detection to offer instant feedback on posture, helping users improve their fitness effectively from the comfort of their home.',
+            'Designed to act as a personal yoga trainer, ZenKraft customizes courses by analyzing user fitness goals, medical history, and available time. Using AI-powered pose detection with OpenCV and MediaPipe, it provides instant corrections, ensuring users maintain safe postures and achieve maximum benefits, all from the comfort of their home.',
         // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
         texture: '/textures/project/ZenKraft.mp4',
         logo: '/assets/zenkraft_logo.png',
@@ -116,9 +116,9 @@ export const myProjects = [
     },
     {
         title: 'Agreement/Decision In Principle Automation system',
-        desc: 'Developed an AIP/DIP automation system during my internship at MortgageKart Ltd. The system automates form filling on lender (bank) intermediary portals and generates mortgage quotes, streamlining the process and enhancing efficiency for mortgage intermediaries.',
+        desc: 'An intelligent automation system built during my internship at MortgageKart Ltd. that accelerates mortgage applications for UK lenders.',
         subdesc:
-            'Gained a strong understanding of the AIP/DIP process in the mortgage domain and analyzed various lender portals. Created intelligent field mappings by interpreting user input from the frontend, enabling automated and logically consistent responses aligned with lender-specific questionnaire formats.',
+            'Built during my internship at MortgageKart Ltd., this system streamlines one of the most time-consuming steps in the mortgage process. By studying lender workflows and intermediary portals in detail, I developed logic to automatically map user inputs into lender-specific formats, enabling accurate form filling and quote generation. This reduced manual data entry and made intermediaries’ work significantly faster and more efficient.',
         // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
         texture: '/textures/project/no_video_available.mp4',
         logo: '/assets/dip.jpg',
@@ -149,10 +149,10 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Keep Moving Forward - Game concept',
-        desc: 'Created during a game jam hosted by Code For a Cause under the theme "Keep Moving Forward", the game features a protagonist who continues to advance no matter the injuries sustained. He relentlessly battles waves of monsters, embodying the theme through his unwavering determination and survival-driven combat.',
+        title: 'Keep Moving Forward - 3D Game Concept',
+        desc: 'A dungeon-crawler game that evolved from a 2D game jam prototype into a full 3D experience, challenging players to persevere through procedurally generated rooms and relentless enemies.',
         subdesc:
-            'Developed a 2D side-scroller game in Unity where the main character battles relentless waves of monsters to rescue his kidnapped daughter from the Demon King. The character pushes forward despite injuries, and uniquely, can reattach severed monster limbs to replace his own lost ones, adding a dark and strategic twist to gameplay.',
+            'Originally created as a 2D side-scroller in a game jam, the project was later expanded into 3D using Unity. Players navigate procedurally generated dungeon rooms, battling waves of monsters while the protagonist continues advancing despite injuries. Innovative mechanics, such as reattaching defeated monsters’ limbs to replace lost ones, add strategic depth, and dynamic 3D environments provide an immersive and tense gameplay experience that embodies the theme Keep Moving Forward.',
         // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
         texture: '/textures/project/no_video_available.mp4',
         logo: '/assets/python.png',
@@ -177,9 +177,9 @@ export const myProjects = [
     },
     {
         title: 'Medical Record system using Blockchain',
-        desc: 'A data storage system which blockchain technology to store the records of patient. With the help of blockchain technology it ensures security and reliability of data records since they are immutable. Due to smart contracts it is easier to execute such systems while ensuring privacy and successful execution.',
+        desc: 'A secure blockchain-based solution for storing and managing medical records with complete transparency and immutability.',
         subdesc:
-            'I made the smart contract in solidity language on RemixIDE. Connected it with my metamask account and deployed the smart contract.',
+            "This project leverages blockchain's core strength—immutability—to safeguard sensitive medical data. I wrote smart contracts in Solidity, deployed them using Remix IDE, and connected with MetaMask to simulate real-world execution. The system ensures records cannot be altered, while smart contracts allow secure sharing and transparent verification, addressing privacy and trust challenges in healthcare.",
         // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
         texture: '/textures/project/remix_ide.mp4',
         logo: '/assets/health-report.png',
@@ -210,13 +210,14 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Emotion Detection Classifier',
-        desc: 'This a ML project where we detect the emotions portrayed by a sentence. This model analyzes the text by breaking it into tokens and with the help of Naive Bayes Classifier it identifies whether a sentence represents joy, anger, sadness, love, fear or surprise',
+        title: 'Predictive Analytics for Customer Retention in Banking',
+        desc: 'An AI-powered churn prediction system that helps banks identify at-risk customers and proactively reduce attrition.',
         subdesc:
-            'Made with python in a jupyter notebook. Dataset obtained from kaggle. Classifier used is the Naive Bayes Classifier. Data preprocessing applied is tokenization and lametization.',
+            'Developed a neural network using Keras to forecast 6-month customer churn, achieving 91% precision and outperforming logistic regression by 15%. Preprocessing, feature engineering, and visualizations were done in Python with Pandas, Matplotlib, and Seaborn, demonstrating the power of deep learning to guide data-driven retention strategies.',
         // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        texture: '/textures/project/emotion_detection.mp4',
+        texture: '/textures/project/no_video_available.mp4',
         logo: '/assets/python.png',
+
         logoStyle: {
             backgroundColor: '#13202F',
             border: '0.2px solid #17293E',
@@ -238,9 +239,9 @@ export const myProjects = [
     },
     {
         title: 'My Portfolio Website',
-        desc: 'This is by far my biggest and personal favorite project. My own portfolio website which allows me to showcase my skills. It also allows others to see my projects, know more about me and contact me in just a brief moment.',
+        desc: 'A fully interactive 3D portfolio website designed to showcase my skills, projects, and personality in a visually engaging way.',
         subdesc:
-            'I built this with ThreeJS, React Three Fiber, React Three drei and ReactJs as the main libraries. I also used GSAP animations for many 3d components. I also used other tools such as Ready Me Player to make my avatar, Mixamo to rig the avatar and get some animations for the same.',
+            'A fully interactive 3D portfolio crafted to go beyond a static resume, offering an immersive experience to recruiters and visitors. Built with React, Three.js, and React Three Fiber, it features smooth GSAP-powered animations, a personalized avatar from Ready Player Me, and character rigging with Mixamo. This project showcases both my technical expertise and creative design skills in an engaging format.',
         // href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
         texture: '/textures/project/myportfolio.mp4',
         logo: '/portfolio.png',
@@ -286,8 +287,8 @@ export const workExperiences = [
         id: 1,
         name: 'MortgageKart Ltd',
         pos: 'Software Developer Engineer Intern',
-        duration: '3rd April 2025 - Present',
-        title: "During my internship at MortgageKart Ltd., I designed and developed a complete AIP/DIP automation system for major UK lenders, including BM Solutions (Birmingham Midshires) and TMW (The Mortgage Works). I studied the end-to-end mortgage process, including its various types and internal workflows, and analyzed lender intermediary portals in detail. Based on this understanding, I created intelligent field mappings and logic to translate user inputs from the frontend into accurate, lender-specific responses. This enabled automated form filling and quote generation, streamlining the mortgage application process and significantly improving efficiency for intermediaries.",
+        duration: 'April 2025 - August 2025',
+        title: "During my internship at MortgageKart, I built an automation system for AIP/DIP mortgage applications used by major UK lenders. I first dove deep into the end-to-end mortgage process, studying different mortgage types, internal workflows, and lender portals. With this understanding, I created intelligent field mappings and logic that could instantly translate user inputs into lender-specific formats. The result was a system that automatically filled forms and generated quotes, dramatically reducing manual effort and making the mortgage process faster and more efficient for intermediaries.",
         icon: '/assets/mortgage-kart.png',
         animation: 'victory',
     },
@@ -295,8 +296,8 @@ export const workExperiences = [
         id: 2,
         name: 'Stralto Global',
         pos: 'Full Stack Intern',
-        duration: '3rd June 2024 - 12th July 2024',
-        title: "During my time at Stralto Global, I developed and deployed a robust backend system, crafting APIs and databases from scratch to support their mobile app’s functionality. Additionally, I designed an intuitive Admin Panel to streamline app management for administrators. I was also responsible for unit testing to ensure code quality and reliability, implementing best practices for maintainable and scalable solutions.",
+        duration: 'June 2024 - July 2024',
+        title: "At Stralto, I built the entire backend system from scratch, designing RESTful APIs and databases that powered both the company’s mobile app and an Admin Dashboard for data management. I also developed the Admin Panel interface, giving administrators a streamlined way to manage users, posts, images, and more. To ensure reliability, I implemented unit testing and best practices, delivering a backend that was scalable, maintainable, and production-ready.",
         icon: '/assets/stralto_global.jpg',
         animation: 'clapping',
     },
@@ -304,8 +305,8 @@ export const workExperiences = [
         id: 3,
         name: 'MeshBA Solutions LLP',
         pos: 'Database Management & Design Intern',
-        duration: '28th February 2024 - 31st March 2024',
-        title: "At MeshBA Solutions, I honed my skills in database management and design, focusing on building efficient data systems. As part of a self-driven project, I designed a comprehensive Movie Ticket Booking System, integrating core principles of data structuring, storage optimization, and retrieval efficiency to enhance user experience and system performance.",
+        duration: 'February 2024 - March 2024',
+        title: "At MeshBA, I designed and managed the database for a Movie Ticket Booking System, structuring it into master and transaction data for efficiency and scalability. I also created a SYS table to log admin activity, ensuring transparency and auditability. By applying normalization up to 3NF and optimizing queries, I improved data consistency, storage efficiency, and retrieval speed, delivering a system tailored for reliable real-world use.",
         icon: '/assets/meshba.jpg',
         animation: 'victory',
     },

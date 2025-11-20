@@ -115,6 +115,35 @@ export const myProjects = [
         ],
     },
     {
+        title: 'Rhythm Game in Unity3D',
+        desc: 'A dynamic, vertical-scrolling rhythm game featuring a custom external asset pipeline for runtime audio injection.',
+        subdesc:
+            'Engineered a custom file I/O system using StreamingAssets and UnityWebRequest to decouple game logic from content, allowing users to hot-swap .wav files and BPM data without recompilation.' +
+            'Implemented precise audio-to-gameplay synchronization algorithms that dynamically calculate projectile speed and spawn rates based on external text-file configuration' +
+            '.Refactored the initialization architecture to handle asynchronous asset loading, ensuring zero-latency synchronization between the AudioSource and the game loop.',
+        // href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        texture: '/textures/project/RhythmGame.mp4',
+        logo: '/assets/unity.png',
+        logoStyle: {
+            backgroundColor: '#13202F',
+            border: '0.2px solid #17293E',
+            boxShadow: '0px 0px 60px 0px #2F6DB54D',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Unity 6',
+                path: '/assets/unity.png',
+            },
+            {
+                id: 2,
+                name: 'C Sharp',
+                path: '/assets/c-sharp-c.svg',
+            },
+        ],
+    },
+    {
         title: 'Agreement/Decision In Principle Automation system',
         desc: 'An intelligent automation system built during my internship at MortgageKart Ltd. that accelerates mortgage applications for UK lenders.',
         subdesc:
@@ -149,67 +178,6 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Keep Moving Forward - 3D Game Concept',
-        desc: 'A dungeon-crawler game that evolved from a 2D game jam prototype into a full 3D experience, challenging players to persevere through procedurally generated rooms and relentless enemies.',
-        subdesc:
-            'Originally created as a 2D side-scroller in a game jam, the project was later expanded into 3D using Unity. Players navigate procedurally generated dungeon rooms, battling waves of monsters while the protagonist continues advancing despite injuries. Innovative mechanics, such as reattaching defeated monsters’ limbs to replace lost ones, add strategic depth, and dynamic 3D environments provide an immersive and tense gameplay experience that embodies the theme Keep Moving Forward.',
-        // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        texture: '/textures/project/no_video_available.mp4',
-        logo: '/assets/python.png',
-        logoStyle: {
-            backgroundColor: '#13202F',
-            border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
-        },
-        spotlight: '/assets/spotlight2.png',
-        tags: [
-            {
-                id: 1,
-                name: 'Unity Engine',
-                path: '/assets/unity.svg',
-            },
-            {
-                id: 2,
-                name: 'C Sharp',
-                path: 'assets/c-sharp-c.svg',
-            },
-        ],
-    },
-    {
-        title: 'Medical Record system using Blockchain',
-        desc: 'A secure blockchain-based solution for storing and managing medical records with complete transparency and immutability.',
-        subdesc:
-            "This project leverages blockchain's core strength—immutability—to safeguard sensitive medical data. I wrote smart contracts in Solidity, deployed them using Remix IDE, and connected with MetaMask to simulate real-world execution. The system ensures records cannot be altered, while smart contracts allow secure sharing and transparent verification, addressing privacy and trust challenges in healthcare.",
-        // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-        texture: '/textures/project/remix_ide.mp4',
-        logo: '/assets/health-report.png',
-        logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-        },
-        spotlight: '/assets/spotlight3.png',
-        tags: [
-            {
-                id: 1,
-                name: 'Solidity',
-                path: '/assets/solidity.png',
-            },
-            {
-                id: 2,
-                name: 'Remix IDE',
-                path: 'assets/remix_ide.png',
-            },
-            {
-                id: 3,
-                name: 'MetaMask',
-                path: '/assets/MetaMask.svg',
-            },
-        ],
-    },
-    {
         title: 'Predictive Analytics for Customer Retention in Banking',
         desc: 'An AI-powered churn prediction system that helps banks identify at-risk customers and proactively reduce attrition.',
         subdesc:
@@ -238,34 +206,29 @@ export const myProjects = [
         ],
     },
     {
-        title: 'My Portfolio Website',
-        desc: 'A fully interactive 3D portfolio website designed to showcase my skills, projects, and personality in a visually engaging way.',
+        title: 'Keep Moving Forward - 3D Game Concept',
+        desc: 'A dungeon-crawler game that evolved from a 2D game jam prototype into a full 3D experience, challenging players to persevere through procedurally generated rooms and relentless enemies.',
         subdesc:
-            'A fully interactive 3D portfolio crafted to go beyond a static resume, offering an immersive experience to recruiters and visitors. Built with React, Three.js, and React Three Fiber, it features smooth GSAP-powered animations, a personalized avatar from Ready Player Me, and character rigging with Mixamo. This project showcases both my technical expertise and creative design skills in an engaging format.',
-        // href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-        texture: '/textures/project/myportfolio.mp4',
-        logo: '/portfolio.png',
+            'Originally created as a 2D side-scroller in a game jam, the project was later expanded into 3D using Unity. Players navigate procedurally generated dungeon rooms, battling waves of monsters while the protagonist continues advancing despite injuries. Innovative mechanics, such as reattaching defeated monsters’ limbs to replace lost ones, add strategic depth, and dynamic 3D environments provide an immersive and tense gameplay experience that embodies the theme Keep Moving Forward.',
+        // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/unity.png',
         logoStyle: {
-            backgroundColor: '#0E1F38',
-            border: '0.2px solid #0E2D58',
-            boxShadow: '0px 0px 60px 0px #2F67B64D',
+            backgroundColor: '#13202F',
+            border: '0.2px solid #17293E',
+            boxShadow: '0px 0px 60px 0px #2F6DB54D',
         },
-        spotlight: '/assets/spotlight4.png',
+        spotlight: '/assets/spotlight2.png',
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Unity Engine',
+                path: '/assets/unity.png',
             },
             {
                 id: 2,
-                name: 'ThreeJS',
-                path: 'assets/threejs.png',
-            },
-            {
-                id: 3,
-                name: 'Mixamo',
-                path: '/assets/mixamo.png',
+                name: 'C Sharp',
+                path: 'assets/c-sharp-c.svg',
             },
         ],
     },

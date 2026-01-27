@@ -56,8 +56,8 @@ const About = () => {
                     <div className='grid-container'>
                         <img src='/assets/grid1.png' alt='grid1' className='w-full sm:w-[276px] h-fit object-contain' />
                         <div>
-                            <p className='grid-headtext'>MS CS Student @ Northeastern</p>
-                            <p className='grid-subtext'>I'm a CS graduate student with a 4.0 GPA, focused on making AI work inside 3D worlds. I spend my time building things like custom Transformers and smart agents in Unity. My goal is to bridge the gap between intelligent code and immersive digital spaces.</p>
+                            <p className='grid-headtext'>MS CS Student @ Northeastern University</p>
+                            <p className='grid-subtext'>I'm a CS graduate student focused on making AI work inside 3D worlds. I spend my time building things like custom Transformers and smart agents in Unity. My goal is to bridge the gap between intelligent code and immersive digital spaces.</p>
                         </div>
                     </div>
                 </div>

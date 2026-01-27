@@ -115,13 +115,134 @@ export const myProjects = [
         ],
     },
     {
-        title: 'Rhythm Game in Unity3D',
-        desc: 'A dynamic, vertical-scrolling rhythm game featuring a custom external asset pipeline for runtime audio injection.',
+        title: 'English-to-Italian Language Transformer',
+        desc: 'A Sequence-to-Sequence Transformer model built from scratch in PyTorch to translate English text into Italian, featuring custom attention mechanisms.',
+        subdesc:
+            'Architected a complete Transformer model based on the "Attention is All You Need" paper, implementing custom Multi-Head Attention, Positional Encodings, and Encoder-Decoder blocks without relying on high-level API abstractions. Engineered a fault-tolerant training pipeline with state-preserving checkpoints to support long-running jobs and utilized TensorBoard for real-time loss visualization and cross-attention map analysis.',
+        href: 'https://github.com/ShravanChandrachud/Transformer-Scratch.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/transfomer-logo.png',
+        logoStyle: {
+            backgroundColor: '#c4c0c0',
+            border: '0.2px solid #36201D',
+            boxShadow: '0px 0px 60px 0px #AA3C304D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 2,
+                name: 'PyTorch',
+                path: '/assets/pytorch-logo.png',
+            },
+            {
+                id: 3,
+                name: 'TensorBoard',
+                path: '/assets/tensorflow-icon.png',
+            },
+        ],
+    }, {
+        title: 'Autonomous Snake Agent (Deep Q-Learning)',
+        desc: 'A Deep Reinforcement Learning agent that uses a Deep Q-Network (DQN) and PyTorch to master the classic Snake game through self-play.',
+        subdesc:
+            'Developed a self-learning agent using PyTorch that navigates an 11-dimensional state space. The system implements an epsilon-greedy strategy for exploration and the Bellman Equation for Q-value updates. Features include an experience replay buffer to stabilize training and a high-performance decision-making loop that allows the agent to achieve automated high scores.',
+        href: 'https://github.com/ShravanChandrachud/Reinforcement-Learning.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/reinforcement-learning.png',
+        logoStyle: {
+            backgroundColor: '#c4c0c0',
+            border: '0.2px solid #36201D',
+            boxShadow: '0px 0px 60px 0px #AA3C304D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 2,
+                name: 'PyTorch',
+                path: '/assets/pytorch-logo.png',
+            },
+            {
+                id: 3,
+                name: 'NumPy',
+                path: '/assets/NumPy.png',
+            },
+        ],
+    }, {
+        title: '3D Platformer Game in Unity',
+        desc: 'A multi-level 3D platformer featuring custom vector-based physics, dynamic scene management, and a state-driven character controller.',
+        subdesc:
+            'Built in Unity using C#, this project moves beyond standard rigidbodies by implementing custom vector-based physics for precise movement and collision detection. Integrated Mixamo animations with a modular code architecture to handle dynamic scene management, level progression, timer constraints, and fail-states, creating a robust and polished gameplay loop.',
+        href: 'https://github.com/ShravanChandrachud/3D-Platformer.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/unity.png',
+        logoStyle: {
+            backgroundColor: '#13202F',
+            border: '0.2px solid #17293E',
+            boxShadow: '0px 0px 60px 0px #2F6DB54D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Unity 6',
+                path: '/assets/unity.png',
+            },
+            {
+                id: 2,
+                name: 'C Sharp',
+                path: '/assets/c-sharp-c.svg',
+            },
+        ],
+    }, {
+        title: 'Simpsons Character Classifier',
+        desc: 'A high-precision Convolutional Neural Network (CNN) designed to identify characters from The Simpsons dataset with over 93.67% accuracy.',
+        subdesc:
+            'Architected a complete Transformer model based on the "Attention is All You Need" paper, implementing custom Multi-Head Attention, Positional Encodings, and Encoder-Decoder blocks without relying on high-level API abstractions. Engineered a fault-tolerant training pipeline with state-preserving checkpoints to support long-running jobs and utilized TensorBoard for real-time loss visualization and cross-attention map analysis.',
+        href: 'https://github.com/ShravanChandrachud/OpenCvPractice.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/opencv.svg',
+        logoStyle: {
+            backgroundColor: '#c4c0c0',
+            border: '0.2px solid #36201D',
+            boxShadow: '0px 0px 60px 0px #AA3C304D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 5,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 6,
+                name: 'OpenCV',
+                path: '/assets/opencv.svg',
+            },
+            {
+                id: 6,
+                name: 'Tensorflow',
+                path: '/assets/tensorflow-icon.png',
+            },
+        ],
+    },
+    {
+        title: 'Rhythm Game in Unity',
+        desc: 'A 2D dynamic, vertical-scrolling rhythm game featuring a custom external asset pipeline for runtime audio injection.',
         subdesc:
             'Engineered a custom file I/O system using StreamingAssets and UnityWebRequest to decouple game logic from content, allowing users to hot-swap .wav files and BPM data without recompilation.' +
             'Implemented precise audio-to-gameplay synchronization algorithms that dynamically calculate projectile speed and spawn rates based on external text-file configuration' +
             '.Refactored the initialization architecture to handle asynchronous asset loading, ensuring zero-latency synchronization between the AudioSource and the game loop.',
-        // href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        href: 'https://github.com/ShravanChandrachud/RhythmGame.git',
         texture: '/textures/project/RhythmGame.mp4',
         logo: '/assets/unity.png',
         logoStyle: {
@@ -205,33 +326,33 @@ export const myProjects = [
             },
         ],
     },
-    {
-        title: 'Keep Moving Forward - 3D Game Concept',
-        desc: 'A dungeon-crawler game that evolved from a 2D game jam prototype into a full 3D experience, challenging players to persevere through procedurally generated rooms and relentless enemies.',
-        subdesc:
-            'Originally created as a 2D side-scroller in a game jam, the project was later expanded into 3D using Unity. Players navigate procedurally generated dungeon rooms, battling waves of monsters while the protagonist continues advancing despite injuries. Innovative mechanics, such as reattaching defeated monsters’ limbs to replace lost ones, add strategic depth, and dynamic 3D environments provide an immersive and tense gameplay experience that embodies the theme Keep Moving Forward.',
-        // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        texture: '/textures/project/no_video_available.mp4',
-        logo: '/assets/unity.png',
-        logoStyle: {
-            backgroundColor: '#13202F',
-            border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
-        },
-        spotlight: '/assets/spotlight2.png',
-        tags: [
-            {
-                id: 1,
-                name: 'Unity Engine',
-                path: '/assets/unity.png',
-            },
-            {
-                id: 2,
-                name: 'C Sharp',
-                path: 'assets/c-sharp-c.svg',
-            },
-        ],
-    },
+    // {
+    //     title: 'Keep Moving Forward - 3D Game Concept',
+    //     desc: 'A dungeon-crawler game that evolved from a 2D game jam prototype into a full 3D experience, challenging players to persevere through procedurally generated rooms and relentless enemies.',
+    //     subdesc:
+    //         'Originally created as a 2D side-scroller in a game jam, the project was later expanded into 3D using Unity. Players navigate procedurally generated dungeon rooms, battling waves of monsters while the protagonist continues advancing despite injuries. Innovative mechanics, such as reattaching defeated monsters’ limbs to replace lost ones, add strategic depth, and dynamic 3D environments provide an immersive and tense gameplay experience that embodies the theme Keep Moving Forward.',
+    //     // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    //     texture: '/textures/project/no_video_available.mp4',
+    //     logo: '/assets/unity.png',
+    //     logoStyle: {
+    //         backgroundColor: '#13202F',
+    //         border: '0.2px solid #17293E',
+    //         boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    //     },
+    //     spotlight: '/assets/spotlight2.png',
+    //     tags: [
+    //         {
+    //             id: 1,
+    //             name: 'Unity Engine',
+    //             path: '/assets/unity.png',
+    //         },
+    //         {
+    //             id: 2,
+    //             name: 'C Sharp',
+    //             path: 'assets/c-sharp-c.svg',
+    //         },
+    //     ],
+    // },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

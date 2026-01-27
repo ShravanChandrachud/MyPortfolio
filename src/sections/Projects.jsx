@@ -61,13 +61,18 @@ const Projects = () => {
                         <p className='animatedText'>{currentProj.subdesc}</p>
                     </div>
                     <div className='flex items-center justify-center flex-wrap gap-5'>
-                        <div className='flex items-center gap-6'>
+                        <div className='flex items-center gap-3'>
                             {currentProj.tags.map((tag, index) => (
                                 <div key={index} className='tech-logo'>
                                     <img src={tag.path} alt={tag.name} />
                                 </div>
                             ))}
                         </div>
+                        {currentProj.href ? (
+                            <a className='flex items-center gap-2 cursor-pointer text-white-600' href={currentProj.href} target='_blank' rel='noreferrer'>
+                                <p>Check Project </p>
+                                <img src='/assets/arrow-up.png' className='w-3 h-3' alt='arrow' />
+                            </a>) : null}
                     </div>
                     <div className='flex justify-between items-center mt-7'>
                         <button className='arrow-btn' onClick={() => handleNavigation('previous')}>

@@ -51,26 +51,35 @@ const About = () => {
     return (
         <section className='c-space my-20' id='about'>
             <p className='head-text'>About Me</p>
-            <div className='grid mt-12 xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
-                <div className='col-span-1 xl:row-span-3'>
+            <div className='grid mt-12 xl:grid-cols-3 xl:grid-rows-4 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
+                <div className='col-span-1 xl:row-span-2'>
                     <div className='grid-container'>
                         <img src='/assets/grid1.png' alt='grid1' className='w-full sm:w-[276px] h-fit object-contain' />
                         <div>
-                            <p className='grid-headtext'>Hi, I'm Shravan</p>
-                            <p className='grid-subtext'>I'm a Master's student in Computer Science at Northeastern University with hands-on experience in full-stack development. I am currently exploring the intersection of AI and VR, driven by a passion for building immersive, intelligent experiences that showcase the transformative potential of emerging technologies.</p>
+                            <p className='grid-headtext'>MS CS Student @ Northeastern</p>
+                            <p className='grid-subtext'>I'm a CS graduate student with a 4.0 GPA, focused on making AI work inside 3D worlds. I spend my time building things like custom Transformers and smart agents in Unity. My goal is to bridge the gap between intelligent code and immersive digital spaces.</p>
                         </div>
                     </div>
                 </div>
-                <div className='col-span-1 xl:row-span-3'>
+                <div className='col-span-1 xl:row-span-2'>
                     <div className='grid-container'>
-                        <img src='/assets/grid2.png' alt='grid2' className='w-full sm:w-[276px] h-fit object-contain' />
+                        <img src='/assets/tech-stack-bg.png' alt='grid2' className='w-full sm:w-[326px] h-[176px] object-contain' />
                         <div>
                             <p className='grid-headtext'>Tech Stack</p>
-                            <p className='grid-subtext'>I specialize in React, Node.js, Express.js, Three.js, and SQL/NoSQL databases, with experience in Python, C++, C#, Java, JavaScript, Solidity, and web frameworks like Flask and Django. I am currently exploring AI-powered AR/VR development using Unity and Unreal Engine.</p>
+                            <p className='grid-subtext'>
+                                1. Machine Learning & Data Science:
+                                PyTorch, TensorFlow, Keras, OpenCV, NumPy, Pandas, Scikit-Learn, TensorBoard
+                                2. Spatial Computing & Simulation:
+                                Unity Engine (C#), AR/VR Development, Unreal Engine
+                                3. Programming Languages and Databases:
+                                Python, C#, C++, JavaScript/TypeScript, MongoDB(NoSQL), MySQL, PostgresSQL
+                                4. Tools:
+                                MySQL Workbench, PgAdmin4, Docker, JIRA, Robot Framework, Remix IDE, Git.
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div className='col-span-1 xl:row-span-3'>
+                    </div >
+                </div >
+                <div className='col-span-1 xl:row-span-2'>
                     <div className='grid-container'>
                         <div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
                             <Globe
@@ -96,7 +105,7 @@ const About = () => {
                             />
                         </div>
                         <div>
-                            <p className='grid-headtext'>I live here</p>
+                            <p className='grid-headtext'>I currently live in Boston</p>
                             <p className='grid-subtext'>I was born in Pune, Maharashtra, India</p>
                             <a href='#contact'>
                                 <Button name='Contact Me' isBeam containerClass='w-full mt-10' />
@@ -104,16 +113,40 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className='xl:col-span-2 xl:row-span-3'>
-                    <div className='grid-container'>
-                        <img src='/assets/grid3.png' alt='grid3' className='w-full sm:h-[276px] h-fit object-contain' />
-                        <div>
-                            <p className='grid-headtext'>Merging AI with 3D Worlds</p>
-                            <p className='grid-subtext'>Exploring the intersection of AI and VR, I design intelligent 3D environments that merge realistic simulations with interactive feedback. Leveraging Three.js, Unity, and AI models, I aim to build applications that transform how users engage with virtual spaces and data-driven scenarios.</p>
+                <div className='xl:col-span-2 xl:row-span-2'>
+                    <div className='grid-container flex flex-col justify-between'>
+
+                        <div className="flex justify-center">
+                            <img
+                                src='/assets/grid3.png'
+                                alt='grid3'
+                                className='w-full sm:h-[260px] h-fit object-contain'
+                            />
+                        </div>
+
+                        <div className="my-6">
+                            <p className='grid-headtext mb-2'>Bringing AI into 3D Space</p>
+                            <p className='grid-subtext'>
+                                I believe AI is most powerful when it can interact with a 3D environment.
+                                I am studying to integrate Deep Learning models into Unity simulations so they can learn to 'see' and 'move' in a digital world.
+                                By combining Computer Vision with spatial computing, I'm building the tools that will power the next generation of smart AR/VR interfaces.
+                            </p>
+                        </div>
+
+                        <div className="flex justify-center mt-auto">
+                            <a
+                                href="/assets/Shravan_Chandrachud_resume.pdf"
+                                download="Shravan_Chandrachud_Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-neutral-100 font-bold text-xl hover:text-white transition-colors"
+                            >
+                                Download Resume
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div className="xl:col-span-1 xl:row-span-3">
+                <div className="xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
                         <img
                             src="/assets/grid4.png"
@@ -161,9 +194,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }
 

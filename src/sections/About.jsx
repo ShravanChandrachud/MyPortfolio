@@ -151,7 +151,7 @@ const About = () => {
                         <img
                             src="/assets/grid4.png"
                             alt="grid4"
-                            className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+                            className="w-full md:h-full sm:h-[276px] h-fit object-cover sm:object-top"
                         />
                         <div className="space-y-2">
                             <p className="grid-headtext text-center">Contact Me</p>
@@ -174,22 +174,6 @@ const About = () => {
                                 <a href="https://www.linkedin.com/in/shravan-chandrachud-308912244/" target='_blank' className="md:text-sm font-small text-gray_gradient text-white">
                                     LinkedIn
                                 </a>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <img src="/assets/phone.png" alt="phone icon" />
-                                <div className="copy-container" onClick={() => handleCopyPhone('+918459984264')}>
-                                    <p className="md:text-sm font-small text-gray_gradient text-white">
-                                        +91 84599 84264
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <img src="/assets/phone.png" alt="phone icon" />
-                                <div className="copy-container" onClick={() => handleCopyPhone('+18573393097')}>
-                                    <p className="md:text-sm font-small text-gray_gradient text-white">
-                                        +1 857-339-30977
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>

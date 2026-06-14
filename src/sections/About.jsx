@@ -57,7 +57,7 @@ const About = () => {
                         <img src='/assets/grid1.png' alt='grid1' className='w-full sm:w-[276px] h-fit object-contain' />
                         <div>
                             <p className='grid-headtext'>MS CS Student @ Northeastern University</p>
-                            <p className='grid-subtext'>I'm a CS graduate student focused on making AI work inside 3D worlds. I spend my time building things like custom Transformers and smart agents in Unity. My goal is to bridge the gap between intelligent code and immersive digital spaces.</p>
+                            <p className='grid-subtext'>I'm a CS graduate student specializing in Computer Vision and AI. I build end-to-end systems — from vision pipelines and agentic workflows to full-stack applications — and I'm currently collaborating with a faculty researcher at Northeastern on active Computer Vision research.</p>
                         </div>
                     </div>
                 </div>
@@ -66,16 +66,24 @@ const About = () => {
                         <img src='/assets/tech-stack-bg.png' alt='grid2' className='w-full sm:w-[326px] h-[176px] object-contain' />
                         <div>
                             <p className='grid-headtext'>Tech Stack</p>
-                            <p className='grid-subtext'>
-                                1. Machine Learning & Data Science:
-                                PyTorch, TensorFlow, Keras, OpenCV, NumPy, Pandas, Scikit-Learn, TensorBoard
-                                2. Spatial Computing & Simulation:
-                                Unity Engine (C#), AR/VR Development, Unreal Engine
-                                3. Programming Languages and Databases:
-                                Python, C#, C++, JavaScript/TypeScript, MongoDB(NoSQL), MySQL, PostgresSQL
-                                4. Tools:
-                                MySQL Workbench, PgAdmin4, Docker, JIRA, Robot Framework, Remix IDE, Git.
-                            </p>
+                            <div className='grid-subtext space-y-2 mt-2'>
+                                <div>
+                                    <span className='font-semibold text-white-700'>AI / ML: </span>
+                                    <span>PyTorch, TensorFlow, Keras, OpenCV, LangChain, LangGraph, Ollama, OpenCLIP, Scikit-Learn, Pandas, NumPy</span>
+                                </div>
+                                <div>
+                                    <span className='font-semibold text-white-700'>Full Stack: </span>
+                                    <span>React, Node.js, Express, Flask, Django, Streamlit, MongoDB, PostgreSQL, MySQL, DynamoDB</span>
+                                </div>
+                                <div>
+                                    <span className='font-semibold text-white-700'>Languages: </span>
+                                    <span>Python, JavaScript, C++, Java</span>
+                                </div>
+                                <div>
+                                    <span className='font-semibold text-white-700'>Cloud & DevOps: </span>
+                                    <span>AWS (Lambda, S3, EC2, ECS Fargate, SQS), Docker, Terraform, GitHub Actions</span>
+                                </div>
+                            </div>
                         </div>
                     </div >
                 </div >
@@ -125,24 +133,11 @@ const About = () => {
                         </div>
 
                         <div className="my-6">
-                            <p className='grid-headtext mb-2'>Bringing AI into 3D Space</p>
+                            <p className='grid-headtext mb-2'>Computer Vision & Agentic AI</p>
                             <p className='grid-subtext'>
-                                I believe AI is most powerful when it can interact with a 3D environment.
-                                I am studying to integrate Deep Learning models into Unity simulations so they can learn to 'see' and 'move' in a digital world.
-                                By combining Computer Vision with spatial computing, I'm building the tools that will power the next generation of smart AR/VR interfaces.
+                                My current work sits at the intersection of Computer Vision and AI systems. I build vision pipelines using models for object detection, masking, and segmentation, and I design multi-step agentic workflows powered by LLMs and VLMs.
+                                I'm actively doing research in Computer Vision at Northeastern, digging into how models perceive and reason about visual data at a deeper level.
                             </p>
-                        </div>
-
-                        <div className="flex justify-center mt-auto">
-                            <a
-                                href="/assets/Shravan_Chandrachud_resume.pdf"
-                                download="Shravan_Chandrachud_Resume.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-neutral-100 font-bold text-xl hover:text-white transition-colors"
-                            >
-                                Download Resume
-                            </a>
                         </div>
                     </div>
                 </div>

@@ -63,6 +63,132 @@ export const navLinks = [
 
 export const myProjects = [
     {
+        title: 'Food Macro Estimator from Cooking Videos',
+        desc: 'An end-to-end computer vision pipeline that watches cooking videos and automatically estimates the nutritional macros of every ingredient detected.',
+        subdesc:
+            'Trained a custom OpenCLIP image classification model on 13,000 images across 20 ingredient classes, achieving 99.2% macro F1 and 99.6% micro F1 accuracy. The pipeline automates keyframe extraction from video, maps visual detections to USDA nutritional data via fuzzy matching, and generates structured JSON dietary summaries using a local Qwen LLM — processing 3+ cooking videos with just 5 seconds of end-to-end latency.',
+        href: 'https://github.com/ShravanChandrachud/Food-Cal-Estimation.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/food-icon.png',
+        logoStyle: {
+            backgroundColor: '#1a1a2e',
+            border: '0.2px solid #2d2d5e',
+            boxShadow: '0px 0px 60px 0px #4B0082AA',
+        },
+        spotlight: '/assets/spotlight2.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 2,
+                name: 'PyTorch',
+                path: '/assets/pytorch-logo.png',
+            },
+            {
+                id: 3,
+                name: 'OpenCV',
+                path: '/assets/opencv.svg',
+            },
+            {
+                id: 4,
+                name: 'Ollama',
+                path: '/assets/ollama-dark.png',
+            },
+            {
+                id: 5,
+                name: 'Qwen',
+                path: '/assets/qwen-color.svg',
+            },
+            {
+                id: 6,
+                name: 'Claude',
+                path: '/assets/claude-color.svg',
+            },
+        ],
+    },
+    {
+        title: 'VulnLens — Automated CI Security Pipeline',
+        desc: 'An event-driven CI security pipeline that intercepts GitHub pull requests, scans changed files for vulnerabilities, and blocks HIGH-severity merges automatically.',
+        subdesc:
+            'Architected across 6 AWS services (S3, Lambda, ECS Fargate, DynamoDB, SQS, Secrets Manager) and provisioned with Terraform + GitHub Actions. A containerized SAST scanner on ECS Fargate detects 11 vulnerability types across JavaScript and Python, publishing scan events to SQS to trigger a downstream analytics Lambda that performs CWE enrichment with MITRE tags, 0–100 risk scoring, DBSCAN clustering, and trend-delta detection — delivering severity-ranked PR comments entirely without developer intervention.',
+        href: 'https://github.com/Sampai28/VulnLens.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/cyber-security.png',
+        logoStyle: {
+            backgroundColor: '#0d1117',
+            border: '0.2px solid #30363d',
+            boxShadow: '0px 0px 60px 0px #F7453044',
+        },
+        spotlight: '/assets/spotlight3.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 2,
+                name: 'Docker',
+                path: '/assets/docker.png',
+            },
+            {
+                id: 3,
+                name: 'Terraform',
+                path: '/assets/terraform.svg',
+            },
+            {
+                id: 4,
+                name: 'NodeJS',
+                path: '/assets/node_js.png',
+            },
+        ],
+    },
+    {
+        title: 'Agentic Blog Writing Assistant',
+        desc: 'An autonomous AI system that transforms a single topic prompt into a fully researched, long-form article in under 2 minutes.',
+        subdesc:
+            'Built with LangGraph and LangChain, the system runs a stateful multi-node workflow that automatically plans, researches, and drafts blog content. It integrates the Tavily Search API to aggregate real-time context from 10+ web sources per query, ensuring every generated article is accurately research-backed. An interactive Streamlit UI lets users kick off the entire pipeline from a single text input, cutting content generation time from hours to under 2 minutes.',
+        href: 'https://github.com/ShravanChandrachud/Blog-Writing-Agent.git',
+        texture: '/textures/project/no_video_available.mp4',
+        logo: '/assets/blog-icon.png',
+        logoStyle: {
+            backgroundColor: '#0f2027',
+            border: '0.2px solid #1a3a4a',
+            boxShadow: '0px 0px 60px 0px #00B4D844',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.png',
+            },
+            {
+                id: 2,
+                name: 'LangChain',
+                path: '/assets/langchain-color.svg',
+            },
+            {
+                id: 4,
+                name: 'Claude',
+                path: '/assets/claude-color.svg',
+            },
+            {
+                id: 5,
+                name: 'Gemini',
+                path: '/assets/gemini-color.svg',
+            },
+            {
+                id: 6,
+                name: 'OpenAI',
+                path: '/assets/openai.svg',
+            },
+        ],
+    },
+    {
         title: 'ZenKraft',
         desc: 'An AI-powered personalized yoga assistant that blends wellness with technology to make fitness more accessible and effective.',
         subdesc:

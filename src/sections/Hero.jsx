@@ -74,7 +74,7 @@ const Hero = () => {
                     <span className='waving-hand'>👋</span>
                 </p>
                 <p className='hero_tag text-gray_gradient'>
-                    Developing Innovative Ideas
+                    Building AI that Sees & Thinks
                 </p>
             </div>
 
